@@ -9,6 +9,13 @@
   </head>
 
   <body>
+    <% flash.each do |name, msg| %>
+    <h3>The following erros prevent the article from getting saved.</h3>
+     <ul>
+       <li><% msg %></li>
+     </ul>
+    <% end %>
+
     <%= yield %>
   </body>
 </html>
