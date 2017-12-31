@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Blog</title>
+    <title>Blog-It</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,8 +9,8 @@
   </head>
 
   <body>
-
-    <% render 'layouts/messages' %>
+    <%= render 'layouts/navigation' %>
+    <%= render 'layouts/messages' %>
     <%= yield %>
   </body>
 </html>
